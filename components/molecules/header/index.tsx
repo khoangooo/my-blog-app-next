@@ -12,7 +12,7 @@ function Header() {
   const showMobileMenu = !!width && width < 1024 && openMobileMenu;
 
   return (
-    <header aria-label="Site Header" className="border-b border-gray-100">
+    <header aria-label="Site Header" className="border-b border-gray-100 sticky top-0 z-10 bg-white dark:bg-gray-900">
       <div className="mx-auto flex h-16 max-w-screen-2xl items-center justify-between sm:px-6 lg:px-8">
         <div className="flex items-center gap-4">
           <div className="p-2 lg:hidden">
@@ -38,7 +38,7 @@ function Header() {
           </div>
         </div>
       </div>
-      {showMobileMenu && <Nav />}
+      {showMobileMenu && <div className="absolute h-auto w-full z-10 bg-white dark:bg-gray-900 dark:text-gray-400"><Nav /></div>}
     </header>
 
   )

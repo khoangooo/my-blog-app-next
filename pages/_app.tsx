@@ -1,6 +1,6 @@
 import { ReactNode } from 'react'
 import type { AppProps } from 'next/app'
-import { Header } from "@/components/molecules";
+import { Footer, Header } from "@/components/molecules";
 import '@/styles/globals.scss'
 
 interface IProps {
@@ -12,6 +12,7 @@ function Layout({ children }: IProps) {
     <>
       <Header />
       {children}
+      <Footer />
     </>
   )
 }
