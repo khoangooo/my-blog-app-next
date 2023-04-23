@@ -1,7 +1,8 @@
-import '@/styles/globals.css'
 import { ReactNode } from 'react'
 import type { AppProps } from 'next/app'
-import Header from '@/components/molecules/header'
+import { Header } from "@/components/molecules";
+import '@/styles/globals.scss'
+
 interface IProps {
   children: ReactNode
 }
