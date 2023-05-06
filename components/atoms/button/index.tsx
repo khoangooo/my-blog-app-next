@@ -1,12 +1,12 @@
 import { PropsWithChildren, ReactNode } from "react";
 
-interface IProps {
+type Props = {
   onClick?: () => void,
   children?: ReactNode,
   props?: PropsWithChildren,
 }
 
-function Button({ onClick = () => { }, children, ...props }: IProps) {
+function Button({ onClick = () => { }, children, ...props }: Props) {
   return (
     <button
       type="button" 
@@ -16,8 +16,6 @@ function Button({ onClick = () => { }, children, ...props }: IProps) {
     >
       {children}
     </button>
-
-
   )
 }
 

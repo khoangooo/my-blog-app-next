@@ -1,6 +1,6 @@
 import { PropsWithChildren, ReactNode } from "react";
 
-interface IProps {
+type Props = {
   label?: string;
   name?: string;
   checked?: boolean;
@@ -8,7 +8,7 @@ interface IProps {
   props?: PropsWithChildren;
 }
 
-function Checkbox({ label = "", name = "default_checkbox", checked = false, onChange = () => { }, ...props }: IProps) {
+function Checkbox({ label = "", name = "default_checkbox", checked = false, onChange = () => { }, ...props }: Props) {
   return (
     <label htmlFor="checkbox" className="flex gap-4">
       <input

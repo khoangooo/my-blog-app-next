@@ -3,11 +3,11 @@ import Item from "./item";
 
 type Tags = Tag[]
 
-interface IProps {
+type Props = {
   tags?: Tags;
 }
 
-function Posts({ tags = [] }: IProps) {
+function Posts({ tags = [] }: Props) {
   const newTags = Array.from({ length: 10 });
 
   return (

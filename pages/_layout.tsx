@@ -4,11 +4,11 @@ import { Roboto } from 'next/font/google'
 
 const roboto = Roboto({ subsets: ['latin'], weight: ["400", "500", "700"] })
 
-interface IProps {
+type Props = {
   children: ReactNode
 }
 
-function Layout({ children }: IProps) {
+function Layout({ children }: Props) {
   return (
     <>
       <Header />

@@ -1,10 +1,10 @@
 import { Tag } from "@/types/tag";
 
-interface IProps {
+type Props = {
   tag?: Tag;
 }
 
-function Item({ tag }: IProps) {
+function Item({ tag }: Props) {
 
   return (
     <li><a href="#">Javascript</a></li>

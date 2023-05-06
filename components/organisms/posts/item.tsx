@@ -1,11 +1,11 @@
 import { Post } from "@/types/post";
 import Link from "next/link";
 
-interface IProps {
+type Props = {
   post?: Post;
 }
 
-function Item({ post }: IProps) {
+function Item({ post }: Props) {
 
   return (
     <li className='flex gap-3'>
